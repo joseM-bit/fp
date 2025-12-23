@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_adb63ceeb7b4115d165f8ccfaac804a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_adb63ceeb7b4115d165f8ccfaac804a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_adb63ceeb7b4115d165f8ccfaac804a9 = L.map(
+                "map_adb63ceeb7b4115d165f8ccfaac804a9",
+                {
+                    center: [38.96664290697674, -0.19418567441860463],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c36e702edb41d8fe7bc145124cc8aa10 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c36e702edb41d8fe7bc145124cc8aa10.addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var marker_9017690e2984c80dbae3d15bbdc94720 = L.marker(
+                [38.949664, -0.195951],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_2bb8b134cdc235f83d4ac953f63aa807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85e49e9e6093927ce077165bdd18b4b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_815b8b3aea08f88596153c0f2c6342a5 = $(`<div id="html_815b8b3aea08f88596153c0f2c6342a5" style="width: 100.0%; height: 100.0%;">         <b>CENTRE PRIVAT LAS COLINAS</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: TR. D'ALBAIDA, 34, Real De Gandia (El)<br>         Comarca: la Safor         </div>`)[0];
+                popup_85e49e9e6093927ce077165bdd18b4b7.setContent(html_815b8b3aea08f88596153c0f2c6342a5);
+            
+        
+
+        marker_9017690e2984c80dbae3d15bbdc94720.bindPopup(popup_85e49e9e6093927ce077165bdd18b4b7)
+        ;
+
+        
+    
+    
+            marker_9017690e2984c80dbae3d15bbdc94720.bindTooltip(
+                `<div>
+                     CENTRE PRIVAT LAS COLINAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9017690e2984c80dbae3d15bbdc94720.setIcon(icon_2bb8b134cdc235f83d4ac953f63aa807);
+            
+    
+            var marker_02c001eb9068129b63dad6f971953cbb = L.marker(
+                [38.970912, -0.199363],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_45550997efdc9c0cb1a9dcfab4f62373 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5be6a428dfead28696b7f32c92be27c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03b626d4bac87eeb1db0331ebdb09b65 = $(`<div id="html_03b626d4bac87eeb1db0331ebdb09b65" style="width: 100.0%; height: 100.0%;">         <b>CENTRE PRIVAT LOS NARANJOS</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CR. DE BARX, S/N, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_5be6a428dfead28696b7f32c92be27c5.setContent(html_03b626d4bac87eeb1db0331ebdb09b65);
+            
+        
+
+        marker_02c001eb9068129b63dad6f971953cbb.bindPopup(popup_5be6a428dfead28696b7f32c92be27c5)
+        ;
+
+        
+    
+    
+            marker_02c001eb9068129b63dad6f971953cbb.bindTooltip(
+                `<div>
+                     CENTRE PRIVAT LOS NARANJOS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_02c001eb9068129b63dad6f971953cbb.setIcon(icon_45550997efdc9c0cb1a9dcfab4f62373);
+            
+    
+            var marker_1f28efdfe7d35cf87ae6fb452816f2a2 = L.marker(
+                [38.963405, -0.184225],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_6ea09ad9792ddf13ae92ae362a40f31b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e81017e71c1a09ba1f09b3a86452b16 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b50d0b963bc4b58df42fac5e82aa23db = $(`<div id="html_b50d0b963bc4b58df42fac5e82aa23db" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ELEMENTAL DE DANSA RAPSODIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. PADRE CARLOS FERRÍS, 22, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_4e81017e71c1a09ba1f09b3a86452b16.setContent(html_b50d0b963bc4b58df42fac5e82aa23db);
+            
+        
+
+        marker_1f28efdfe7d35cf87ae6fb452816f2a2.bindPopup(popup_4e81017e71c1a09ba1f09b3a86452b16)
+        ;
+
+        
+    
+    
+            marker_1f28efdfe7d35cf87ae6fb452816f2a2.bindTooltip(
+                `<div>
+                     CENTRE ELEMENTAL DE DANSA RAPSODIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f28efdfe7d35cf87ae6fb452816f2a2.setIcon(icon_6ea09ad9792ddf13ae92ae362a40f31b);
+            
+    
+            var marker_1a5fc42f6a0a8770c65da0569751b132 = L.marker(
+                [38.967359, -0.186633],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_660c6d8821020061072dc1c8b15b2562 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1352e8d526d5cd281fe7ef22d9a31683 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03c639ef3815cd3ad731dbb8c2a48617 = $(`<div id="html_03c639ef3815cd3ad731dbb8c2a48617" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ELEMENTAL DE MÚSICA MAESTRO VALDOVÍN</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. ABAD SOLA, 32, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_1352e8d526d5cd281fe7ef22d9a31683.setContent(html_03c639ef3815cd3ad731dbb8c2a48617);
+            
+        
+
+        marker_1a5fc42f6a0a8770c65da0569751b132.bindPopup(popup_1352e8d526d5cd281fe7ef22d9a31683)
+        ;
+
+        
+    
+    
+            marker_1a5fc42f6a0a8770c65da0569751b132.bindTooltip(
+                `<div>
+                     CENTRE ELEMENTAL DE MÚSICA MAESTRO VALDOVÍN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a5fc42f6a0a8770c65da0569751b132.setIcon(icon_660c6d8821020061072dc1c8b15b2562);
+            
+    
+            var marker_549836bdf524582567ecb7f235c5516a = L.marker(
+                [39.071762, -0.262129],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_d13a13ec534f1beca040b8146c92ada9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba33b2d1868f9212b398e21c9183ca94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddf20c93ae979be29b9a3f749fdf70e4 = $(`<div id="html_ddf20c93ae979be29b9a3f749fdf70e4" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA EDUARDO ARNAU</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PZ. PRAT COMARCAL, S/N, Tavernes De La Valldigna<br>         Comarca: la Safor         </div>`)[0];
+                popup_ba33b2d1868f9212b398e21c9183ca94.setContent(html_ddf20c93ae979be29b9a3f749fdf70e4);
+            
+        
+
+        marker_549836bdf524582567ecb7f235c5516a.bindPopup(popup_ba33b2d1868f9212b398e21c9183ca94)
+        ;
+
+        
+    
+    
+            marker_549836bdf524582567ecb7f235c5516a.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA EDUARDO ARNAU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_549836bdf524582567ecb7f235c5516a.setIcon(icon_d13a13ec534f1beca040b8146c92ada9);
+            
+    
+            var marker_00e2fe287070372ec00ce082a70180f1 = L.marker(
+                [38.918702, -0.223562],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_4d2b0a3c4f67fb776677f80f6b13faac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_516cbfda636c30079ca47d1c3b1ab79c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_843aad50122f04bca3214969355978ae = $(`<div id="html_843aad50122f04bca3214969355978ae" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. GOYA, 1, Ador<br>         Comarca: la Safor         </div>`)[0];
+                popup_516cbfda636c30079ca47d1c3b1ab79c.setContent(html_843aad50122f04bca3214969355978ae);
+            
+        
+
+        marker_00e2fe287070372ec00ce082a70180f1.bindPopup(popup_516cbfda636c30079ca47d1c3b1ab79c)
+        ;
+
+        
+    
+    
+            marker_00e2fe287070372ec00ce082a70180f1.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00e2fe287070372ec00ce082a70180f1.setIcon(icon_4d2b0a3c4f67fb776677f80f6b13faac);
+            
+    
+            var marker_b99b045a019c26f43944b16131d068ba = L.marker(
+                [38.951395, -0.139944],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_362f5cb463e2a73126daee34662c4283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2616c1383a8f96d43d2fb5982fc5bc8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_358354b6a78d08ab09daf0e60ce441b9 = $(`<div id="html_358354b6a78d08ab09daf0e60ce441b9" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA UNIÓ MUSICAL MILAMARINA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. SANT ANDREU, 1, Miramar<br>         Comarca: la Safor         </div>`)[0];
+                popup_2616c1383a8f96d43d2fb5982fc5bc8c.setContent(html_358354b6a78d08ab09daf0e60ce441b9);
+            
+        
+
+        marker_b99b045a019c26f43944b16131d068ba.bindPopup(popup_2616c1383a8f96d43d2fb5982fc5bc8c)
+        ;
+
+        
+    
+    
+            marker_b99b045a019c26f43944b16131d068ba.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA UNIÓ MUSICAL MILAMARINA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b99b045a019c26f43944b16131d068ba.setIcon(icon_362f5cb463e2a73126daee34662c4283);
+            
+    
+            var marker_ee49e6ca74cd3862d7da0afa4f402ca6 = L.marker(
+                [38.99273, -0.157006],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_f0bcb1dab4705b59d06ab434819509ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_419499464f8844b93ca250047615293f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1761635fa7798d800e0bdab0aaa4ad8b = $(`<div id="html_1761635fa7798d800e0bdab0aaa4ad8b" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA DISTRICTE MARITIM GRAU DE GANDIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. MARE DE DÉU, 17, Grau I Platja<br>         Comarca: la Safor         </div>`)[0];
+                popup_419499464f8844b93ca250047615293f.setContent(html_1761635fa7798d800e0bdab0aaa4ad8b);
+            
+        
+
+        marker_ee49e6ca74cd3862d7da0afa4f402ca6.bindPopup(popup_419499464f8844b93ca250047615293f)
+        ;
+
+        
+    
+    
+            marker_ee49e6ca74cd3862d7da0afa4f402ca6.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA DISTRICTE MARITIM GRAU DE GANDIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee49e6ca74cd3862d7da0afa4f402ca6.setIcon(icon_f0bcb1dab4705b59d06ab434819509ed);
+            
+    
+            var marker_9b45d9cc804591e227cb783d81825502 = L.marker(
+                [39.04558, -0.312672],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_5aec861b2aba63a1ef3500d0530bac73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_608034faf3d8f5c2ebf13e94777a54a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0838eff502ffe718636db5c6814fcccf = $(`<div id="html_0838eff502ffe718636db5c6814fcccf" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA MESTRE AMOROS</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. AUSIÀS MARCH, 3, Simat De La Valldigna<br>         Comarca: la Safor         </div>`)[0];
+                popup_608034faf3d8f5c2ebf13e94777a54a1.setContent(html_0838eff502ffe718636db5c6814fcccf);
+            
+        
+
+        marker_9b45d9cc804591e227cb783d81825502.bindPopup(popup_608034faf3d8f5c2ebf13e94777a54a1)
+        ;
+
+        
+    
+    
+            marker_9b45d9cc804591e227cb783d81825502.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA MESTRE AMOROS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b45d9cc804591e227cb783d81825502.setIcon(icon_5aec861b2aba63a1ef3500d0530bac73);
+            
+    
+            var marker_70f30de32789db2d74b864a25c1be64f = L.marker(
+                [38.917128, -0.171216],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_317e991f0806f1c84bba463180a0beac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1a66f062c3aa66fd7f1424e1bf36a67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_decce4add78315392a20bd8f523f2f15 = $(`<div id="html_decce4add78315392a20bd8f523f2f15" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA CARRÒS</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: AV. DE LA CONSTITUCIÓN, 10, Font D'En Carròs (La)<br>         Comarca: la Safor         </div>`)[0];
+                popup_d1a66f062c3aa66fd7f1424e1bf36a67.setContent(html_decce4add78315392a20bd8f523f2f15);
+            
+        
+
+        marker_70f30de32789db2d74b864a25c1be64f.bindPopup(popup_d1a66f062c3aa66fd7f1424e1bf36a67)
+        ;
+
+        
+    
+    
+            marker_70f30de32789db2d74b864a25c1be64f.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA CARRÒS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70f30de32789db2d74b864a25c1be64f.setIcon(icon_317e991f0806f1c84bba463180a0beac);
+            
+    
+            var marker_ab0e2a8567a29d9b7d346839c8221d80 = L.marker(
+                [39.010766, -0.218321],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_ce09f70eeeb9ad21537de4cf783b56b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_939b59708bdd03ea64e5267ee6b2141b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8bef358ae8f4136b2b7209dc9d94c2f = $(`<div id="html_e8bef358ae8f4136b2b7209dc9d94c2f" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. VALENCIA, 4, Xeresa<br>         Comarca: la Safor         </div>`)[0];
+                popup_939b59708bdd03ea64e5267ee6b2141b.setContent(html_e8bef358ae8f4136b2b7209dc9d94c2f);
+            
+        
+
+        marker_ab0e2a8567a29d9b7d346839c8221d80.bindPopup(popup_939b59708bdd03ea64e5267ee6b2141b)
+        ;
+
+        
+    
+    
+            marker_ab0e2a8567a29d9b7d346839c8221d80.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab0e2a8567a29d9b7d346839c8221d80.setIcon(icon_ce09f70eeeb9ad21537de4cf783b56b5);
+            
+    
+            var marker_6989ffbfe78359fd921da634ae4a3bf5 = L.marker(
+                [39.032369, -0.214547],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_e40884d7e3612ab0eda9889a4d4fe1dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79effd9f108cfeb5e4c753621e0a63e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74ac3061441e9502a6c04af7e3ec69bc = $(`<div id="html_74ac3061441e9502a6c04af7e3ec69bc" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. SANT ROC, 29, Xeraco<br>         Comarca: la Safor         </div>`)[0];
+                popup_79effd9f108cfeb5e4c753621e0a63e6.setContent(html_74ac3061441e9502a6c04af7e3ec69bc);
+            
+        
+
+        marker_6989ffbfe78359fd921da634ae4a3bf5.bindPopup(popup_79effd9f108cfeb5e4c753621e0a63e6)
+        ;
+
+        
+    
+    
+            marker_6989ffbfe78359fd921da634ae4a3bf5.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6989ffbfe78359fd921da634ae4a3bf5.setIcon(icon_e40884d7e3612ab0eda9889a4d4fe1dc);
+            
+    
+            var marker_a22c026b572038a47d29e2185e1cb2e9 = L.marker(
+                [38.914899, -0.19244],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_d9ca16e321e45f9729b69a1a6b1cf2b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d62a73c503845010682aeca6ee834c36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1696f5e0e208432426bb73d3f7d02d60 = $(`<div id="html_1696f5e0e208432426bb73d3f7d02d60" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. BOAMIT, 26, Potries<br>         Comarca: la Safor         </div>`)[0];
+                popup_d62a73c503845010682aeca6ee834c36.setContent(html_1696f5e0e208432426bb73d3f7d02d60);
+            
+        
+
+        marker_a22c026b572038a47d29e2185e1cb2e9.bindPopup(popup_d62a73c503845010682aeca6ee834c36)
+        ;
+
+        
+    
+    
+            marker_a22c026b572038a47d29e2185e1cb2e9.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a22c026b572038a47d29e2185e1cb2e9.setIcon(icon_d9ca16e321e45f9729b69a1a6b1cf2b8);
+            
+    
+            var marker_e89566ed25351a37546aa27eee4d94ff = L.marker(
+                [38.943082, -0.179791],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_b10a0c57bc196daa04fe19c1291cf098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7416327ae4e935614a60ccace42d8f2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_657bb96e3a7d876c57c12dcf0b7cd8ce = $(`<div id="html_657bb96e3a7d876c57c12dcf0b7cd8ce" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA ASOCIACIÓN MUSICAL L'ALMOINA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. EL CASTELL, 2, Almoines<br>         Comarca: la Safor         </div>`)[0];
+                popup_7416327ae4e935614a60ccace42d8f2c.setContent(html_657bb96e3a7d876c57c12dcf0b7cd8ce);
+            
+        
+
+        marker_e89566ed25351a37546aa27eee4d94ff.bindPopup(popup_7416327ae4e935614a60ccace42d8f2c)
+        ;
+
+        
+    
+    
+            marker_e89566ed25351a37546aa27eee4d94ff.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA ASOCIACIÓN MUSICAL L'ALMOINA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e89566ed25351a37546aa27eee4d94ff.setIcon(icon_b10a0c57bc196daa04fe19c1291cf098);
+            
+    
+            var marker_c9b99eeb7441e7c4b5a248d41dc81c84 = L.marker(
+                [38.923696, -0.121129],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_4106227dcaec86f3ff8a88b4077ff161 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ed76d40b2cbbcbc9b54857243b06d2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81cdd64e81e9a0b834ab5b5a20566c58 = $(`<div id="html_81cdd64e81e9a0b834ab5b5a20566c58" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA OLIVA-AAMO</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PS. JAUME I, 4-6, Oliva<br>         Comarca: la Safor         </div>`)[0];
+                popup_7ed76d40b2cbbcbc9b54857243b06d2b.setContent(html_81cdd64e81e9a0b834ab5b5a20566c58);
+            
+        
+
+        marker_c9b99eeb7441e7c4b5a248d41dc81c84.bindPopup(popup_7ed76d40b2cbbcbc9b54857243b06d2b)
+        ;
+
+        
+    
+    
+            marker_c9b99eeb7441e7c4b5a248d41dc81c84.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA OLIVA-AAMO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c9b99eeb7441e7c4b5a248d41dc81c84.setIcon(icon_4106227dcaec86f3ff8a88b4077ff161);
+            
+    
+            var marker_6dd978ea3d3c65083f5f6c87aa273036 = L.marker(
+                [38.933636, -0.186513],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_0ba1fd0b5e915bd310584acbebfd295e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e38ea43cda8efbac8a44bafcaf635dcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a96423431b13848e18afc667898a3fd = $(`<div id="html_7a96423431b13848e18afc667898a3fd" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA AGRUP. ART. MUSICAL AUSIÀS MARCH</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. ESCOLES, 5, Beniarjó<br>         Comarca: la Safor         </div>`)[0];
+                popup_e38ea43cda8efbac8a44bafcaf635dcb.setContent(html_7a96423431b13848e18afc667898a3fd);
+            
+        
+
+        marker_6dd978ea3d3c65083f5f6c87aa273036.bindPopup(popup_e38ea43cda8efbac8a44bafcaf635dcb)
+        ;
+
+        
+    
+    
+            marker_6dd978ea3d3c65083f5f6c87aa273036.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA AGRUP. ART. MUSICAL AUSIÀS MARCH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dd978ea3d3c65083f5f6c87aa273036.setIcon(icon_0ba1fd0b5e915bd310584acbebfd295e);
+            
+    
+            var marker_81b1b3d2d79f69ee48105e641fb5008f = L.marker(
+                [38.948087, -0.195565],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_cffc10161352b8a01ff2b852e8304d5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cde1f8022477e42c2e29299e236c1783 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73e3cbb24b34574c2a8716eccb13fd51 = $(`<div id="html_73e3cbb24b34574c2a8716eccb13fd51" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA MESTRE GEA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. ALFREDO PÉREZ, S/N, Real De Gandia (El)<br>         Comarca: la Safor         </div>`)[0];
+                popup_cde1f8022477e42c2e29299e236c1783.setContent(html_73e3cbb24b34574c2a8716eccb13fd51);
+            
+        
+
+        marker_81b1b3d2d79f69ee48105e641fb5008f.bindPopup(popup_cde1f8022477e42c2e29299e236c1783)
+        ;
+
+        
+    
+    
+            marker_81b1b3d2d79f69ee48105e641fb5008f.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA MESTRE GEA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_81b1b3d2d79f69ee48105e641fb5008f.setIcon(icon_cffc10161352b8a01ff2b852e8304d5d);
+            
+    
+            var marker_4d1ff9a10d48fa7d48f5bc88fc20aef1 = L.marker(
+                [38.940915, -0.153615],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_c94a418708e84000802ac5d73bfa16d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a31caab107194deb23e80f1a6a41a530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74b89683947c0ff5aac705edd753dc37 = $(`<div id="html_74b89683947c0ff5aac705edd753dc37" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA AGRUPACIÓ MUSICAL</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. DE LA SÈQUIA, S/N, Palmera<br>         Comarca: la Safor         </div>`)[0];
+                popup_a31caab107194deb23e80f1a6a41a530.setContent(html_74b89683947c0ff5aac705edd753dc37);
+            
+        
+
+        marker_4d1ff9a10d48fa7d48f5bc88fc20aef1.bindPopup(popup_a31caab107194deb23e80f1a6a41a530)
+        ;
+
+        
+    
+    
+            marker_4d1ff9a10d48fa7d48f5bc88fc20aef1.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA AGRUPACIÓ MUSICAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d1ff9a10d48fa7d48f5bc88fc20aef1.setIcon(icon_c94a418708e84000802ac5d73bfa16d7);
+            
+    
+            var marker_88134f30439431c5c995ad36c3218cb0 = L.marker(
+                [38.959826, -0.193352],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_55cbd6a1acf23f7d04a71e1360a36c24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c813c1e716b051d31948a34928fb19fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b299703191747e3bc7eb363333d3e94 = $(`<div id="html_7b299703191747e3bc7eb363333d3e94" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. AUSIÀS MARCH, 8, Benirredrà<br>         Comarca: la Safor         </div>`)[0];
+                popup_c813c1e716b051d31948a34928fb19fb.setContent(html_7b299703191747e3bc7eb363333d3e94);
+            
+        
+
+        marker_88134f30439431c5c995ad36c3218cb0.bindPopup(popup_c813c1e716b051d31948a34928fb19fb)
+        ;
+
+        
+    
+    
+            marker_88134f30439431c5c995ad36c3218cb0.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88134f30439431c5c995ad36c3218cb0.setIcon(icon_55cbd6a1acf23f7d04a71e1360a36c24);
+            
+    
+            var marker_157c9d1927c5a03f020251e468811b01 = L.marker(
+                [38.989911, -0.159312],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_fc0f916cf3366c8d9fa34e274b16723f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_444ef6aba9464513058aabc4446b0775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cb6337d6df55251b68024540d1aa6a8 = $(`<div id="html_1cb6337d6df55251b68024540d1aa6a8" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ENS. PROF. DE MÚSICA DISTRICTE MARÍTIM GRAU DE GANDIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: AV. DEL PORT, S/N, Grau I Platja<br>         Comarca: la Safor         </div>`)[0];
+                popup_444ef6aba9464513058aabc4446b0775.setContent(html_1cb6337d6df55251b68024540d1aa6a8);
+            
+        
+
+        marker_157c9d1927c5a03f020251e468811b01.bindPopup(popup_444ef6aba9464513058aabc4446b0775)
+        ;
+
+        
+    
+    
+            marker_157c9d1927c5a03f020251e468811b01.bindTooltip(
+                `<div>
+                     CENTRE ENS. PROF. DE MÚSICA DISTRICTE MARÍTIM GRAU DE GANDIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_157c9d1927c5a03f020251e468811b01.setIcon(icon_fc0f916cf3366c8d9fa34e274b16723f);
+            
+    
+            var marker_22f7bfe90b00a993b006ff3dc91c2f00 = L.marker(
+                [38.964781, -0.177734],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_a7a361ccd3c518e58a7e5501c3fb7007 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcef590e9fd8fa32bfec72a653a2f2d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66b6bdae8e13fa006cdab818b34c7924 = $(`<div id="html_66b6bdae8e13fa006cdab818b34c7924" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. LEGIONARIO BERNABEU (CEIP BORJA),, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_fcef590e9fd8fa32bfec72a653a2f2d6.setContent(html_66b6bdae8e13fa006cdab818b34c7924);
+            
+        
+
+        marker_22f7bfe90b00a993b006ff3dc91c2f00.bindPopup(popup_fcef590e9fd8fa32bfec72a653a2f2d6)
+        ;
+
+        
+    
+    
+            marker_22f7bfe90b00a993b006ff3dc91c2f00.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22f7bfe90b00a993b006ff3dc91c2f00.setIcon(icon_a7a361ccd3c518e58a7e5501c3fb7007);
+            
+    
+            var marker_65fc16e967d251c771679ec028467ff0 = L.marker(
+                [38.916304, -0.116552],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_6c5862841a7130961fd078b8de4081d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aa674bec813b265d8846fcd5cb5e989 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99c6a6231295bdf73907751aa52fa593 = $(`<div id="html_99c6a6231295bdf73907751aa52fa593" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA SANTA CECILIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. NIÑO, 4, Oliva<br>         Comarca: la Safor         </div>`)[0];
+                popup_9aa674bec813b265d8846fcd5cb5e989.setContent(html_99c6a6231295bdf73907751aa52fa593);
+            
+        
+
+        marker_65fc16e967d251c771679ec028467ff0.bindPopup(popup_9aa674bec813b265d8846fcd5cb5e989)
+        ;
+
+        
+    
+    
+            marker_65fc16e967d251c771679ec028467ff0.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA SANTA CECILIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65fc16e967d251c771679ec028467ff0.setIcon(icon_6c5862841a7130961fd078b8de4081d3);
+            
+    
+            var marker_f6803713b174db36e5c46a5a0c9b18db = L.marker(
+                [39.015182, -0.300871],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_fc89bcb1ba8d9fa85f020db4ca74a305 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41a1f367dd10b6d59dfef504354e79b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dab4b477c2b6ec8d2f1eaa16c468095a = $(`<div id="html_dab4b477c2b6ec8d2f1eaa16c468095a" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA SOC. INSTRUCT. MUSICAL STA.CECILIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. MUNTANYA, 11, Barx<br>         Comarca: la Safor         </div>`)[0];
+                popup_41a1f367dd10b6d59dfef504354e79b3.setContent(html_dab4b477c2b6ec8d2f1eaa16c468095a);
+            
+        
+
+        marker_f6803713b174db36e5c46a5a0c9b18db.bindPopup(popup_41a1f367dd10b6d59dfef504354e79b3)
+        ;
+
+        
+    
+    
+            marker_f6803713b174db36e5c46a5a0c9b18db.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA SOC. INSTRUCT. MUSICAL STA.CECILIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6803713b174db36e5c46a5a0c9b18db.setIcon(icon_fc89bcb1ba8d9fa85f020db4ca74a305);
+            
+    
+            var marker_529e88b419b8bb273a473ca3a466a2da = L.marker(
+                [38.94409, -0.157856],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_433ab75f048c06e3e257fd654793fa4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_092cf5ebb047237a327478a57e1dd6c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0601d0e74c0da0bd74730e667bf523c = $(`<div id="html_d0601d0e74c0da0bd74730e667bf523c" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: AV. ALACANT, 2, Bellreguard Poble<br>         Comarca: la Safor         </div>`)[0];
+                popup_092cf5ebb047237a327478a57e1dd6c7.setContent(html_d0601d0e74c0da0bd74730e667bf523c);
+            
+        
+
+        marker_529e88b419b8bb273a473ca3a466a2da.bindPopup(popup_092cf5ebb047237a327478a57e1dd6c7)
+        ;
+
+        
+    
+    
+            marker_529e88b419b8bb273a473ca3a466a2da.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_529e88b419b8bb273a473ca3a466a2da.setIcon(icon_433ab75f048c06e3e257fd654793fa4e);
+            
+    
+            var marker_da738fe2f324c60bce1583cae6e939a3 = L.marker(
+                [39.054125, -0.30238],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_ccd598867077438e25e08c6d7b2b6ea1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eeb07da46bba7b4c697892366df3a66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_115281c14c028a85c28545ba843953de = $(`<div id="html_115281c14c028a85c28545ba843953de" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA JOSÉ SERRA SERRA -PEPE RAFAELA-</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. MESTRE SERRANO, 8 Y 10, Benifairó De La Valldigna<br>         Comarca: la Safor         </div>`)[0];
+                popup_2eeb07da46bba7b4c697892366df3a66.setContent(html_115281c14c028a85c28545ba843953de);
+            
+        
+
+        marker_da738fe2f324c60bce1583cae6e939a3.bindPopup(popup_2eeb07da46bba7b4c697892366df3a66)
+        ;
+
+        
+    
+    
+            marker_da738fe2f324c60bce1583cae6e939a3.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA JOSÉ SERRA SERRA -PEPE RAFAELA-
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da738fe2f324c60bce1583cae6e939a3.setIcon(icon_ccd598867077438e25e08c6d7b2b6ea1);
+            
+    
+            var marker_a80061896961173483237253b132e657 = L.marker(
+                [38.961815, -0.184628],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_85315371cab1604fdbc02a6ad3319f9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19eab7bc660ba91f5390ca0fb498d8b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cce81910c85de9f56507133a1cbd346 = $(`<div id="html_2cce81910c85de9f56507133a1cbd346" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ELEMENTAL DE DANSA ESCUELA TALLER DE DANZA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. PADRE CARLOS FERRÍS, 52, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_19eab7bc660ba91f5390ca0fb498d8b7.setContent(html_2cce81910c85de9f56507133a1cbd346);
+            
+        
+
+        marker_a80061896961173483237253b132e657.bindPopup(popup_19eab7bc660ba91f5390ca0fb498d8b7)
+        ;
+
+        
+    
+    
+            marker_a80061896961173483237253b132e657.bindTooltip(
+                `<div>
+                     CENTRE ELEMENTAL DE DANSA ESCUELA TALLER DE DANZA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a80061896961173483237253b132e657.setIcon(icon_85315371cab1604fdbc02a6ad3319f9c);
+            
+    
+            var marker_b7ade40e89f8cff5788a365a39b67105 = L.marker(
+                [38.936396, -0.154581],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_cdea1561714ad64c9107bb3bc2379441 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edf302db53f1f5ccd69fbcc093fe5f7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2cf45f93f15460d60c97ffb4aa87c19f = $(`<div id="html_2cf45f93f15460d60c97ffb4aa87c19f" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. SANT JAUME, 1, Alqueria De La Comtessa (L')<br>         Comarca: la Safor         </div>`)[0];
+                popup_edf302db53f1f5ccd69fbcc093fe5f7b.setContent(html_2cf45f93f15460d60c97ffb4aa87c19f);
+            
+        
+
+        marker_b7ade40e89f8cff5788a365a39b67105.bindPopup(popup_edf302db53f1f5ccd69fbcc093fe5f7b)
+        ;
+
+        
+    
+    
+            marker_b7ade40e89f8cff5788a365a39b67105.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7ade40e89f8cff5788a365a39b67105.setIcon(icon_cdea1561714ad64c9107bb3bc2379441);
+            
+    
+            var marker_d2510685086c74db3abc9962cd6d62be = L.marker(
+                [38.927353, -0.221143],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_480d021da09d02f6d248bc16e9503c1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3123aab5c8e427132a3f645341072a51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d70774ad6da0c3680ec71ca0238dc8f = $(`<div id="html_9d70774ad6da0c3680ec71ca0238dc8f" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA AMICS DE LA MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. CASAL SANTA ANA, S/N, Palma De Gandía<br>         Comarca: la Safor         </div>`)[0];
+                popup_3123aab5c8e427132a3f645341072a51.setContent(html_9d70774ad6da0c3680ec71ca0238dc8f);
+            
+        
+
+        marker_d2510685086c74db3abc9962cd6d62be.bindPopup(popup_3123aab5c8e427132a3f645341072a51)
+        ;
+
+        
+    
+    
+            marker_d2510685086c74db3abc9962cd6d62be.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA AMICS DE LA MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2510685086c74db3abc9962cd6d62be.setIcon(icon_480d021da09d02f6d248bc16e9503c1c);
+            
+    
+            var marker_08f4b05e382de9062ad59c8acf1f5119 = L.marker(
+                [38.924339, -0.219938],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_7df96b11ae0294d1a941091833768abd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d552708f2022bf9ec3303479548691d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36e9fa2a74dd8abe10f1bf11a640db4f = $(`<div id="html_36e9fa2a74dd8abe10f1bf11a640db4f" style="width: 100.0%; height: 100.0%;">         <b>CENTRE PRIV. ED. INF.1er CICLE L'ESCOLETA DE PALMA DE GANDIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. AUSIÀS MARCH, 34, Palma De Gandía<br>         Comarca: la Safor         </div>`)[0];
+                popup_1d552708f2022bf9ec3303479548691d.setContent(html_36e9fa2a74dd8abe10f1bf11a640db4f);
+            
+        
+
+        marker_08f4b05e382de9062ad59c8acf1f5119.bindPopup(popup_1d552708f2022bf9ec3303479548691d)
+        ;
+
+        
+    
+    
+            marker_08f4b05e382de9062ad59c8acf1f5119.bindTooltip(
+                `<div>
+                     CENTRE PRIV. ED. INF.1er CICLE L'ESCOLETA DE PALMA DE GANDIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_08f4b05e382de9062ad59c8acf1f5119.setIcon(icon_7df96b11ae0294d1a941091833768abd);
+            
+    
+            var marker_bf6c8cd483c30416b2deb680eb12b7b4 = L.marker(
+                [38.973965, -0.178539],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_26580e6afb8e9d085d20642b429cb81f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_310fd5df6a416ace87051e14d83da910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f834d115bf6c6d600c1fff0a7ed8698a = $(`<div id="html_f834d115bf6c6d600c1fff0a7ed8698a" style="width: 100.0%; height: 100.0%;">         <b>CENTRE PRIVAT FP  GARCÍA IBÁÑEZ</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. JUAN RAMÓN JIMÉNEZ, 19, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_310fd5df6a416ace87051e14d83da910.setContent(html_f834d115bf6c6d600c1fff0a7ed8698a);
+            
+        
+
+        marker_bf6c8cd483c30416b2deb680eb12b7b4.bindPopup(popup_310fd5df6a416ace87051e14d83da910)
+        ;
+
+        
+    
+    
+            marker_bf6c8cd483c30416b2deb680eb12b7b4.bindTooltip(
+                `<div>
+                     CENTRE PRIVAT FP  GARCÍA IBÁÑEZ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf6c8cd483c30416b2deb680eb12b7b4.setIcon(icon_26580e6afb8e9d085d20642b429cb81f);
+            
+    
+            var marker_8ea1a6b387961e72b893abc5304c8d57 = L.marker(
+                [38.975692, -0.143262],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_a0de798406e304148a42efdd73e50f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ab179a47ed3e283bc823b7988034c34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d81dac5f0a2bf0dc01e10f16c9d9e47 = $(`<div id="html_5d81dac5f0a2bf0dc01e10f16c9d9e47" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. SANT PERE, S/N, Daimús<br>         Comarca: la Safor         </div>`)[0];
+                popup_7ab179a47ed3e283bc823b7988034c34.setContent(html_5d81dac5f0a2bf0dc01e10f16c9d9e47);
+            
+        
+
+        marker_8ea1a6b387961e72b893abc5304c8d57.bindPopup(popup_7ab179a47ed3e283bc823b7988034c34)
+        ;
+
+        
+    
+    
+            marker_8ea1a6b387961e72b893abc5304c8d57.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ea1a6b387961e72b893abc5304c8d57.setIcon(icon_a0de798406e304148a42efdd73e50f04);
+            
+    
+            var marker_d3bafe614ef7099711d6a91d6c3a272f = L.marker(
+                [38.883634, -0.210704],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_3e0db9299cc95607d06f693b9f50ac2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d262a75c88486f1644598e6b9fa56d46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_157d903e6205c7367614b54187b6cf17 = $(`<div id="html_157d903e6205c7367614b54187b6cf17" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA AGRUPACIÓ MUSICAL</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. BARRANC DE LA MONEDA, 32, Vilallonga<br>         Comarca: la Safor         </div>`)[0];
+                popup_d262a75c88486f1644598e6b9fa56d46.setContent(html_157d903e6205c7367614b54187b6cf17);
+            
+        
+
+        marker_d3bafe614ef7099711d6a91d6c3a272f.bindPopup(popup_d262a75c88486f1644598e6b9fa56d46)
+        ;
+
+        
+    
+    
+            marker_d3bafe614ef7099711d6a91d6c3a272f.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA AGRUPACIÓ MUSICAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3bafe614ef7099711d6a91d6c3a272f.setIcon(icon_3e0db9299cc95607d06f693b9f50ac2e);
+            
+    
+            var marker_c0a649e53810895f8861a07c629654e2 = L.marker(
+                [38.970099, -0.187551],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_b64ec648fb8eaf76ebc65fb16fc1c4e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2b2c15d54f9d359a48446fc9e2684af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50d87113b52389bf9f7b85da6e5c2383 = $(`<div id="html_50d87113b52389bf9f7b85da6e5c2383" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA CENTRE MUSICAL BENIOPA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: AV. DE BENIOPA, 54, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_a2b2c15d54f9d359a48446fc9e2684af.setContent(html_50d87113b52389bf9f7b85da6e5c2383);
+            
+        
+
+        marker_c0a649e53810895f8861a07c629654e2.bindPopup(popup_a2b2c15d54f9d359a48446fc9e2684af)
+        ;
+
+        
+    
+    
+            marker_c0a649e53810895f8861a07c629654e2.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA CENTRE MUSICAL BENIOPA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0a649e53810895f8861a07c629654e2.setIcon(icon_b64ec648fb8eaf76ebc65fb16fc1c4e3);
+            
+    
+            var marker_d96f55a1afbdb9a865fdc454e50879d9 = L.marker(
+                [39.069788, -0.26837],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_21106fd0a3e076dfa2d641a613fd18ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2030b5729a4ab7b25d0445a37dd57f75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d49e6bcb0cf61949c8667c2c14cab501 = $(`<div id="html_d49e6bcb0cf61949c8667c2c14cab501" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE DANSA TABERNES</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. NOU, 25, Tavernes De La Valldigna<br>         Comarca: la Safor         </div>`)[0];
+                popup_2030b5729a4ab7b25d0445a37dd57f75.setContent(html_d49e6bcb0cf61949c8667c2c14cab501);
+            
+        
+
+        marker_d96f55a1afbdb9a865fdc454e50879d9.bindPopup(popup_2030b5729a4ab7b25d0445a37dd57f75)
+        ;
+
+        
+    
+    
+            marker_d96f55a1afbdb9a865fdc454e50879d9.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE DANSA TABERNES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d96f55a1afbdb9a865fdc454e50879d9.setIcon(icon_21106fd0a3e076dfa2d641a613fd18ec);
+            
+    
+            var marker_7c306cea7b286e98f902284ff465044c = L.marker(
+                [39.071762, -0.262129],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_a03f0968ef5330b22fddf58f6ae2184c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce4e797a08f38c8df88176baa559b625 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfde4420ea8fc0c51ec9d6fbe691369d = $(`<div id="html_cfde4420ea8fc0c51ec9d6fbe691369d" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ENS. PROFESSIONALS DE MÚSICA MESTRE ARNAU</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PZ. PRAT COMARCAL, S/N, Tavernes De La Valldigna<br>         Comarca: la Safor         </div>`)[0];
+                popup_ce4e797a08f38c8df88176baa559b625.setContent(html_cfde4420ea8fc0c51ec9d6fbe691369d);
+            
+        
+
+        marker_7c306cea7b286e98f902284ff465044c.bindPopup(popup_ce4e797a08f38c8df88176baa559b625)
+        ;
+
+        
+    
+    
+            marker_7c306cea7b286e98f902284ff465044c.bindTooltip(
+                `<div>
+                     CENTRE ENS. PROFESSIONALS DE MÚSICA MESTRE ARNAU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c306cea7b286e98f902284ff465044c.setIcon(icon_a03f0968ef5330b22fddf58f6ae2184c);
+            
+    
+            var marker_725f790e4bea2f75f853e61509038ea3 = L.marker(
+                [38.931889, -0.257192],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_4192782ca4f85cc19a121e8dfb943672 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e44f588ee03e449f12ed979fb73294f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f005114a2ac3f2a0123b1025f5ba0db = $(`<div id="html_0f005114a2ac3f2a0123b1025f5ba0db" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA MESTRE VILLAR</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. MAYOR, 4, Ròtova<br>         Comarca: la Safor         </div>`)[0];
+                popup_3e44f588ee03e449f12ed979fb73294f.setContent(html_0f005114a2ac3f2a0123b1025f5ba0db);
+            
+        
+
+        marker_725f790e4bea2f75f853e61509038ea3.bindPopup(popup_3e44f588ee03e449f12ed979fb73294f)
+        ;
+
+        
+    
+    
+            marker_725f790e4bea2f75f853e61509038ea3.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA MESTRE VILLAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_725f790e4bea2f75f853e61509038ea3.setIcon(icon_4192782ca4f85cc19a121e8dfb943672);
+            
+    
+            var marker_1cef3e568fedd604ceb6df40714ae01b = L.marker(
+                [38.925302, -0.094271],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_7b518458b35dec2f326331af3f281e20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33977c5a3756a4e9488e3bad9b239b0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1778e4c5b2c872bd797e9130471d522f = $(`<div id="html_1778e4c5b2c872bd797e9130471d522f" style="width: 100.0%; height: 100.0%;">         <b>CENTRE PRIV. ED. INF. 1er CICLE EL BORIOL-ESPAI OBERT</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. BARRANC DEL XIRICULL, 6, Oliva<br>         Comarca: la Safor         </div>`)[0];
+                popup_33977c5a3756a4e9488e3bad9b239b0b.setContent(html_1778e4c5b2c872bd797e9130471d522f);
+            
+        
+
+        marker_1cef3e568fedd604ceb6df40714ae01b.bindPopup(popup_33977c5a3756a4e9488e3bad9b239b0b)
+        ;
+
+        
+    
+    
+            marker_1cef3e568fedd604ceb6df40714ae01b.bindTooltip(
+                `<div>
+                     CENTRE PRIV. ED. INF. 1er CICLE EL BORIOL-ESPAI OBERT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cef3e568fedd604ceb6df40714ae01b.setIcon(icon_7b518458b35dec2f326331af3f281e20);
+            
+    
+            var marker_e1a3a6f72b92e2f3785878f291218ce4 = L.marker(
+                [38.948604, -0.191837],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_4b668eb9fe5c86de7f41dc7bfb90de12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32de338ccc19f7698bca9e6ffb1395e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87c60a2e59a37459d5aed4d43054a304 = $(`<div id="html_87c60a2e59a37459d5aed4d43054a304" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA TRADICIONAL</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. LLAURADOR VALENCIA, 17, Real De Gandia (El)<br>         Comarca: la Safor         </div>`)[0];
+                popup_32de338ccc19f7698bca9e6ffb1395e0.setContent(html_87c60a2e59a37459d5aed4d43054a304);
+            
+        
+
+        marker_e1a3a6f72b92e2f3785878f291218ce4.bindPopup(popup_32de338ccc19f7698bca9e6ffb1395e0)
+        ;
+
+        
+    
+    
+            marker_e1a3a6f72b92e2f3785878f291218ce4.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA TRADICIONAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1a3a6f72b92e2f3785878f291218ce4.setIcon(icon_4b668eb9fe5c86de7f41dc7bfb90de12);
+            
+    
+            var marker_fcbc63f9624505755b7a616c646bf750 = L.marker(
+                [38.964591, -0.177503],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_b881bb9eb814badb1160ed4add96565f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8639b117723e4a7a04800c512e38b1c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2ed5d83ea8f69dbf07e01b8b1d79ebd = $(`<div id="html_e2ed5d83ea8f69dbf07e01b8b1d79ebd" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ENS. PROFESSIONALS DE MÚSICA CIUTAT DUCAL</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PC. DE AUSIÀS MARCH, 5, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_8639b117723e4a7a04800c512e38b1c8.setContent(html_e2ed5d83ea8f69dbf07e01b8b1d79ebd);
+            
+        
+
+        marker_fcbc63f9624505755b7a616c646bf750.bindPopup(popup_8639b117723e4a7a04800c512e38b1c8)
+        ;
+
+        
+    
+    
+            marker_fcbc63f9624505755b7a616c646bf750.bindTooltip(
+                `<div>
+                     CENTRE ENS. PROFESSIONALS DE MÚSICA CIUTAT DUCAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcbc63f9624505755b7a616c646bf750.setIcon(icon_b881bb9eb814badb1160ed4add96565f);
+            
+    
+            var marker_699e4d81bfca4e1ece6c53c402e9a632 = L.marker(
+                [38.968775, -0.18119],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_081b9b0c846be9467b3575c575dcb72e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dad03643763cb2412b8bbf23dca0f5dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dba447021125785e10e22b723dbbac8 = $(`<div id="html_9dba447021125785e10e22b723dbbac8" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA I DANSA CALASSANÇ</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PZ. ESCOLA PÍA, 7, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_dad03643763cb2412b8bbf23dca0f5dc.setContent(html_9dba447021125785e10e22b723dbbac8);
+            
+        
+
+        marker_699e4d81bfca4e1ece6c53c402e9a632.bindPopup(popup_dad03643763cb2412b8bbf23dca0f5dc)
+        ;
+
+        
+    
+    
+            marker_699e4d81bfca4e1ece6c53c402e9a632.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA I DANSA CALASSANÇ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_699e4d81bfca4e1ece6c53c402e9a632.setIcon(icon_081b9b0c846be9467b3575c575dcb72e);
+            
+    
+            var marker_5ba1e1694dc60dddc1596220b8495f03 = L.marker(
+                [38.980419, -0.182103],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_b9b48b86a29923cd8fc468130f920de0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0abe3561dd93abd80f711cb5f6146168 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaea71d911fcf02814e63dff117b6e0a = $(`<div id="html_aaea71d911fcf02814e63dff117b6e0a" style="width: 100.0%; height: 100.0%;">         <b>CENTRE ESTRANGER BRITISH SCHOOL GANDIA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: PZ. DE LA LLUM (POLÍGON ALCODAR), 6, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_0abe3561dd93abd80f711cb5f6146168.setContent(html_aaea71d911fcf02814e63dff117b6e0a);
+            
+        
+
+        marker_5ba1e1694dc60dddc1596220b8495f03.bindPopup(popup_0abe3561dd93abd80f711cb5f6146168)
+        ;
+
+        
+    
+    
+            marker_5ba1e1694dc60dddc1596220b8495f03.bindTooltip(
+                `<div>
+                     CENTRE ESTRANGER BRITISH SCHOOL GANDIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ba1e1694dc60dddc1596220b8495f03.setIcon(icon_b9b48b86a29923cd8fc468130f920de0);
+            
+    
+            var marker_1d1f89010950a8df3dd695462da8baba = L.marker(
+                [38.97113, -0.199621],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_c48f641c479c54c8df5555b8084d828e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6138f8bbe1970268282f2ac02075780a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eb57fd6c751f87e08741bb449b5d112 = $(`<div id="html_8eb57fd6c751f87e08741bb449b5d112" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA ELS TARONGERS</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CR. DE BARX, S/N, Gandia<br>         Comarca: la Safor         </div>`)[0];
+                popup_6138f8bbe1970268282f2ac02075780a.setContent(html_8eb57fd6c751f87e08741bb449b5d112);
+            
+        
+
+        marker_1d1f89010950a8df3dd695462da8baba.bindPopup(popup_6138f8bbe1970268282f2ac02075780a)
+        ;
+
+        
+    
+    
+            marker_1d1f89010950a8df3dd695462da8baba.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA ELS TARONGERS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d1f89010950a8df3dd695462da8baba.setIcon(icon_c48f641c479c54c8df5555b8084d828e);
+            
+    
+            var marker_477f696bf279c06e5eb48d8107bedac4 = L.marker(
+                [38.939786, -0.132743],
+                {
+}
+            ).addTo(map_adb63ceeb7b4115d165f8ccfaac804a9);
+        
+    
+            var icon_a8977ed90f35891a4f61cd3a119b52ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pushpin",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b22642a2dbd663863589828c7d18fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b435a37b92000b8c4c5147af83379955 = $(`<div id="html_b435a37b92000b8c4c5147af83379955" style="width: 100.0%; height: 100.0%;">         <b>ESCOLA PRIVADA DE MÚSICA</b><br>         Régimen: <span style='color:red; font-weight:bold;'>PRIVADO</span><br>         Dirección: CL. LES MORERES, 3, Piles<br>         Comarca: la Safor         </div>`)[0];
+                popup_9b22642a2dbd663863589828c7d18fbf.setContent(html_b435a37b92000b8c4c5147af83379955);
+            
+        
+
+        marker_477f696bf279c06e5eb48d8107bedac4.bindPopup(popup_9b22642a2dbd663863589828c7d18fbf)
+        ;
+
+        
+    
+    
+            marker_477f696bf279c06e5eb48d8107bedac4.bindTooltip(
+                `<div>
+                     ESCOLA PRIVADA DE MÚSICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_477f696bf279c06e5eb48d8107bedac4.setIcon(icon_a8977ed90f35891a4f61cd3a119b52ac);
+            
+</script>
+</html>
