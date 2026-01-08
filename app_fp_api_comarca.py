@@ -8,6 +8,7 @@ import os
 import sys
 import boto3
 import re
+import requests
 
 # ----------------------------------------------------------------------
 # 1. CÀRREGA I PREPROCESSAMENT DE DADES DE FP 
@@ -670,6 +671,8 @@ class TabContent:
         self.province_dropdown.on_change = self.update_dependent_dropdowns
         self.comarca_dropdown.on_change = self.update_localidad_dropdown
         self.grade_dropdown.on_change = self.update_cycle_dropdown
+        self.comarca_dropdown.on_change = self.update_cycle_dropdown
+        self.localidad_dropdown.on_change = self.update_cycle_dropdown
         
         # Construcció de la interfície amb nova organització
         self.filter_section = ft.Container(
@@ -773,24 +776,43 @@ class TabContent:
             self.page.update()
     
     def update_cycle_dropdown(self, e=None):
-        """Actualitza el dropdown de cicles segons els filtres seleccionats."""
+        """Actualitza el dropdown de cicles segons tots els filtres actius."""
         filtered_df = self.initial_df.copy()
+        
         selected_province = self.province_dropdown.value
+        selected_comarca = self.comarca_dropdown.value
+        selected_localidad = self.localidad_dropdown.value
         selected_grade = self.grade_dropdown.value
-        
-        if selected_province and selected_province != "TOTES LES PROVÍNCIES":
+
+        # Província
+        if selected_province != "TOTES LES PROVÍNCIES":
             filtered_df = filtered_df[filtered_df['PROVINCIA'] == selected_province]
-            
-        if selected_grade and selected_grade != "TOTS ELS GRAUS":
+
+        # Comarca
+        if selected_comarca != "TOTES LES COMARQUES":
+            filtered_df = filtered_df[filtered_df['COMARCA'] == selected_comarca]
+
+        # Localitat
+        if selected_localidad != "TOTES LES LOCALITATS":
+            filtered_df = filtered_df[filtered_df['LOCALIDAD'] == selected_localidad]
+
+        # Grau
+        if selected_grade != "TOTS ELS GRAUS":
             filtered_df = filtered_df[filtered_df['GRADO'] == selected_grade]
-        
+
+        # Cicles resultants
         filtered_cycles = get_clean_sorted_list(filtered_df['CICLO'])
+
+        self.cycle_dropdown.options = (
+            [ft.dropdown.Option("TOTS ELS CICLES/CURSOS")] +
+            [ft.dropdown.Option(c) for c in filtered_cycles]
+        )
         
-        self.cycle_dropdown.options = [ft.dropdown.Option("TOTS ELS CICLES/CURSOS")] + [ft.dropdown.Option(c) for c in filtered_cycles]
         self.cycle_dropdown.value = "TOTS ELS CICLES/CURSOS"
-        
+
         if e:
             self.page.update()
+
     
     def create_offer_card(self, offer_data: pd.Series, index: int) -> ft.Card:
         """Crea una targeta d'oferta amb interacció de clic."""
