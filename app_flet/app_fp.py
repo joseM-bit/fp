@@ -1,12 +1,12 @@
 import flet as ft
 from flet_webview import WebView
 import pandas as pd
-from controllers.fp_controller import obtenir_tots_els_filtres, executar_cerca_oferta, obtenir_comarques, obtenir_localitats
+from controllers.fp_controller import obtenir_tots_els_filtres, executar_cerca_oferta, obtenir_comarques, obtenir_localitats_de_comarca, obtenir_localitats_de_provincia
 
 class FpApp:
     def __init__(self, page: ft.Page):
         self.page = page
-        self.page.title = "Cercador de FP - Comunitat Valenciana"
+        self.page.title = "Orientat FP - Comunitat Valenciana"
         self.page.theme_mode = ft.ThemeMode.LIGHT
         
         # Referències per a actualització dinàmica
@@ -38,6 +38,10 @@ class FpApp:
             label="Grau", width=180,
             options=[ft.dropdown.Option("Tots")] + [ft.dropdown.Option(g) for g in self.filtres_globals.graus]
         )
+        """self.drop_cicles = ft.Dropdown(
+            label="Cicle", width=300, 
+            options=[ft.dropdown.Option("Tots")] + [ft.dropdown.Option(c) for c in self.filtres_globals.cicles]
+        ))"""
 
         # --- CONFIGURACIÓ INICIAL DEL MAPA (WebView) ---
         # URL inicial: Centrat a la CV
@@ -96,25 +100,29 @@ class FpApp:
             self.drop_comarca.options.append(ft.dropdown.Option(c))
         
         self.drop_comarca.value = "Totes"
-        self.page.update()
+        self.actualitzar_localitats(e)
 
     def actualitzar_localitats(self, e):
         comarca_sel = self.drop_comarca.value
+        provincia_sel = self.drop_provincia.value
         
-        # Decideix si hem de carregar totes o filtrar
-        if comarca_sel == "Totes":
-            # Si tria "Totes", carreguem la llista global inicial
+        # 1. Cas: Cap filtre seleccionat (Tot a "Totes")
+        if comarca_sel == "Totes" and provincia_sel == "Totes":
             noves_localitats = self.filtres_globals.localitats
+            
+        # 2. Cas: Només tenim la Província (Comarca és "Totes")
+        elif comarca_sel == "Totes":
+            noves_localitats = obtenir_localitats_de_provincia(provincia_sel)
+            
+        # 3. Cas: Tenim una Comarca específica
         else:
-            # Si no, fa la conexió amb l'API (req.params)
-            noves_localitats = obtenir_localitats(comarca_sel)
+            noves_localitats = obtenir_localitats_de_comarca(comarca_sel)
 
-        # Neteja i ompli el dropdown de localitats
+        # Actualització visual
         self.drop_localitat.options = [ft.dropdown.Option("Totes")]
         for localitat in noves_localitats:
             self.drop_localitat.options.append(ft.dropdown.Option(localitat))
         
-        # Reset del valor i refresc de la pàgina
         self.drop_localitat.value = "Totes"
         self.page.update()
 

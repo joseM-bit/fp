@@ -13,6 +13,17 @@ def get_filtres():
         print(f"Error en get_filtres: {e}")
         return {"success": False, "data": {"provincies": [], "comarques": [], "localitats": [], "graus": []}}
 
+def get_cicles():
+    """Obté la llista completa de cicles per al dropdown de cicles"""
+    try:
+         response = requests.get(f"{BASE_URL}/cicles")
+         response.raise_for_status()
+         return response.json()
+    except requests.RequestException as e:
+        print(f"Error en get_cicles: {e}")
+        return {"success": False, "data": []}
+
+
 def cercar_oferta(provincia=None, comarca=None, localitat=None, grau=None):
     """Envia els filtres seleccionats al servidor i rep els resultats de la cerca"""
     try:
@@ -70,4 +81,20 @@ def get_localitats_per_comarca(comarca):
         return []
     except requests.RequestException as e:
         print(f"Error en get_localitats_per_comarca: {e}")
+        return {"success": False, "error": str(e)}
+
+def get_localitats_per_provincia(provincia):
+    """Obté la llista de localitats d'una provincia determinada"""
+
+    prov_encoded = urllib.parse.quote(provincia)
+    url = f"{BASE_URL}/toteslocalitats/{prov_encoded}"
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        result = response.json()
+        if result.get("success"):
+            return result.get("data", [])
+        return []
+    except requests.RequestException as e:
+        print(f"Error en get_localitats_per_provincia: {e}")
         return {"success": False, "error": str(e)}

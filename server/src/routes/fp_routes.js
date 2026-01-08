@@ -1,5 +1,5 @@
 import express from 'express';
-import { getFiltresInicials, cercarOferta, getComarquesPerProvincia, getLocalitatsPerComarca } from '../controllers/fp_controller.js';
+import { getFiltresInicials, cercarOferta, getComarquesPerProvincia, getLocalitatsPerComarca, getLocalitatsPerProvincia } from '../controllers/fp_controller.js';
 
 const router = express.Router();
 
@@ -12,5 +12,6 @@ router.post('/cercar', cercarOferta);
 
 router.get('/comarques/:provincia', getComarquesPerProvincia);
 router.get('/localitats/:comarca', getLocalitatsPerComarca);
+router.get('/toteslocalitats/:provincia', getLocalitatsPerProvincia);
 
 export default router;

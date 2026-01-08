@@ -1,4 +1,4 @@
-from services.api_service import get_filtres, cercar_oferta, get_comarques_per_provincia, get_localitats_per_comarca
+from services.api_service import get_filtres, get_cicles, cercar_oferta, get_comarques_per_provincia, get_localitats_per_comarca, get_localitats_per_provincia
 from models.fp_models import Centre, Filtres
 
 def obtenir_tots_els_filtres():
@@ -7,6 +7,14 @@ def obtenir_tots_els_filtres():
     if json_data.get("success"):
         return Filtres.from_json(json_data)
     return Filtres([], [], [], [])
+
+"""def obtenir_tots_els_cicles():
+    "Retorna una llista de objectes Cicle per als Dropdowns"
+    json_data = get_cicles()
+    if json_data.get("success"):
+        return Cicle.from_json(json_data)
+    return Filtres([], [], [], [])"""
+
 
 def executar_cerca_oferta(provincia=None, comarca=None, localitat=None, grau=None):
     """Retorna una llista d'objectes Centre segons els filtres"""
@@ -40,9 +48,9 @@ def obtenir_comarques(provincia=None):
     
     return comarques
 
-def obtenir_localitats(comarca=None):
+def obtenir_localitats_de_comarca(comarca=None):
     """
-    Retorna la llista de comarques filtrada per província demanant-ho a l'API.
+    Retorna la llista de localitats filtrada per comarca.
     """
     if not comarca or comarca == "Totes":
         # Si no hi ha comarca, retorna totes les localitats amb la funció get_filtres
@@ -50,5 +58,18 @@ def obtenir_localitats(comarca=None):
         return json_data.get("data", {}).get("localitats", [])
     
     localitats = get_localitats_per_comarca(comarca)
+    
+    return localitats
+
+def obtenir_localitats_de_provincia(provincia=None):
+    """
+    Retorna la llista de localitats filtrada per província.
+    """
+    if not provincia or provincia == "Totes":
+        # Si no hi ha provincia, retorna totes les localitats amb la funció get_filtres
+        json_data = get_filtres()
+        return json_data.get("data", {}).get("localitats", [])
+    
+    localitats = get_localitats_per_provincia(provincia)
     
     return localitats

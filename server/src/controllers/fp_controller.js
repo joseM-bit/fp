@@ -84,15 +84,52 @@ export const getComarquesPerProvincia = async (req, res) => {
     }
 };
 
-// Obtenir comarques filtrades per província
+// Obtenir comarques filtrades per Comarca
 export const getLocalitatsPerComarca = async (req, res) => {
-    const { comarca } = req.params;
+    const comarca = decodeURIComponent(req.params.comarca);
+    
     try {
-        const [rows] = await db.db.promise().query(
-            'SELECT DISTINCT localitat FROM centre WHERE comarca = ? AND localitat IS NOT NULL ORDER BY localitat',
-            [comarca]
-        );
-        res.json({ success: true, data: rows.map(l => l.localitat) });
+        const sql = `
+            SELECT DISTINCT c.localitat 
+            FROM centre c
+            INNER JOIN oferta o ON c.codi = o.codcen
+            WHERE c.comarca = ? 
+              AND c.localitat IS NOT NULL 
+            ORDER BY c.localitat`;
+
+        const [rows] = await db.db.promise().query(sql, [comarca]);
+
+        
+        // Enviem la llista de noms al frontend
+        res.json({ 
+            success: true, 
+            data: rows.map(l => l.localitat) 
+        });
+    } catch (error) {
+        console.error('Error a getLocalitatsPerComarca:', error);
+        res.status(500).json({ success: false, message: error.message });
+    }
+};
+
+// Obtenir localitats amb oferta filtrades per Província
+export const getLocalitatsPerProvincia = async (req, res) => {
+    const provincia = decodeURIComponent(req.params.provincia);
+    
+    try {
+        const sql = `
+            SELECT DISTINCT c.localitat 
+            FROM centre c
+            INNER JOIN oferta o ON c.codi = o.codcen
+            WHERE c.provincia = ? 
+              AND c.localitat IS NOT NULL 
+            ORDER BY c.localitat`;
+
+        const [rows] = await db.db.promise().query(sql, [provincia]);
+        
+        res.json({ 
+            success: true, 
+            data: rows.map(l => l.localitat) 
+        });
     } catch (error) {
         res.status(500).json({ success: false, message: error.message });
     }
