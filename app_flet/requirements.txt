@@ -1,0 +1,4 @@
+flet
+flet_webview
+fpdf
+#google-genai
